@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="张俊祥律师证券索赔咨询：上市公司虚假陈述、财务造假、信息披露违规导致投资者股票亏损后的索赔资格初步研判、损失测算、立案材料准备及诉讼代理服务。" />
+  <title>张俊祥律师｜证券索赔咨询</title>
+  <style>
+    :root{
+      --bg:#0b1730;
+      --bg2:#10234a;
+      --card:#ffffff;
+      --text:#172033;
+      --muted:#5e6a7f;
+      --line:#e8ecf3;
+      --gold:#c8a45d;
+      --gold2:#d9b56c;
+      --blue:#163a72;
+      --shadow:0 14px 40px rgba(8,18,40,.12);
+      --shadow2:0 10px 24px rgba(8,18,40,.10);
+      --radius:18px;
+      --radius2:14px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 20% 0%, rgba(200,164,93,.10), transparent 50%),
+        linear-gradient(180deg,#f7f9fd 0%, #eef3fb 100%);
+    }
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .nav{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:saturate(180%) blur(12px);
+      background:rgba(10,20,40,.82);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav-inner{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 0;color:#fff;gap:12px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.5px}
+    .brand-mark{
+      width:38px;height:38px;border-radius:12px;
+      background:linear-gradient(135deg,var(--gold),#f1dfb4);
+      box-shadow:0 8px 18px rgba(200,164,93,.25);
+      display:grid;place-items:center;color:#1f2d4b;font-weight:900;
+    }
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:rgba(255,255,255,.88)}
+    .nav-links a{opacity:.92}
+    .hero{
+      padding:58px 0 28px;
+      background:
+        linear-gradient(180deg, rgba(11,23,48,.98), rgba(16,35,74,.92)),
+        url('') center/cover no-repeat;
+      color:#fff;
+    }
+    .hero-grid{
+      display:grid;grid-template-columns:1.18fr .82fr;gap:28px;align-items:stretch;
+    }
+    .hero-copy{
+      padding:22px 0 8px;
+    }
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 14px;border:1px solid rgba(255,255,255,.16);
+      border-radius:999px;color:#f0f4ff;background:rgba(255,255,255,.05);
+      font-size:13px;
+    }
+    h1{
+      margin:18px 0 14px;
+      font-size:clamp(32px,5vw,54px);
+      line-height:1.12;
+      letter-spacing:-.5px;
+    }
+    .sub{
+      margin:0;
+      font-size:17px;line-height:1.8;color:rgba(255,255,255,.82);
+      max-width:760px;
+    }
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      min-height:50px;padding:0 20px;border-radius:999px;
+      font-weight:700;font-size:15px;transition:.2s ease;
+      border:1px solid transparent;cursor:pointer;
+    }
+    .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#10203d;box-shadow:0 14px 28px rgba(200,164,93,.22)}
+    .btn-primary:hover{transform:translateY(-1px)}
+    .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.22)}
+    .btn-ghost:hover{background:rgba(255,255,255,.08)}
+    .hero-panel{
+      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:24px;padding:22px;box-shadow:0 24px 64px rgba(0,0,0,.16);
+    }
+    .panel-title{font-size:18px;font-weight:800;margin:0 0 14px}
+    .panel-list{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+    .panel-list li{
+      display:flex;gap:12px;align-items:flex-start;
+      padding:14px;border-radius:16px;background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      color:rgba(255,255,255,.92);
+    }
+    .dot{
+      width:10px;height:10px;border-radius:50%;margin-top:6px;background:linear-gradient(135deg,var(--gold),#f7e7bd);flex:0 0 auto;
+      box-shadow:0 0 0 4px rgba(200,164,93,.12);
+    }
+    .section{padding:28px 0}
+    .section-head{
+      display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px;flex-wrap:wrap
+    }
+    .section h2{margin:0;font-size:28px;line-height:1.2;color:var(--blue)}
+    .section p.lead{margin:6px 0 0;color:var(--muted);line-height:1.8}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .card{
+      background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:22px;
+    }
+    .pain{
+      background:linear-gradient(180deg,#fff, #f7f9ff);
+      border-left:5px solid var(--gold);
+    }
+    .adv-list,.flow-list{display:grid;gap:12px}
+    .adv-item,.flow-item{
+      display:flex;gap:14px;align-items:flex-start;
+      padding:15px 16px;border:1px solid var(--line);border-radius:16px;background:#fff;
+    }
+    .num{
+      width:30px;height:30px;border-radius:10px;
+      background:linear-gradient(135deg,var(--bg),var(--blue));color:#fff;
+      display:grid;place-items:center;font-weight:800;flex:0 0 auto;font-size:13px;
+    }
+    .adv-item strong,.flow-item strong{display:block;margin-bottom:4px}
+    .adv-item span,.flow-item span{color:var(--muted);line-height:1.7;font-size:14px}
+    .flow-item .num{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#10203d}
+    .form-wrap{
+      background:linear-gradient(180deg,#fff,#f8fbff);
+      border:1px solid var(--line);
+      border-radius:24px;padding:22px;box-shadow:var(--shadow2)
+    }
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .field{display:flex;flex-direction:column;gap:8px}
+    .field.full{grid-column:1 / -1}
+    label{font-size:14px;font-weight:700;color:#22304b}
+    input,select,textarea{
+      width:100%;border:1px solid #dbe3ef;background:#fff;
+      border-radius:14px;padding:13px 14px;font-size:15px;outline:none;
+      transition:border-color .2s ease, box-shadow .2s ease;
+      color:var(--text);
+    }
+    input:focus,select:focus,textarea:focus{
+      border-color:#8aa6d8;box-shadow:0 0 0 4px rgba(22,58,114,.08);
+    }
+    textarea{min-height:108px;resize:vertical}
+    .upload-box{
+      border:1.5px dashed #c8d4e6;border-radius:16px;padding:16px;background:#fbfcff;
+      display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+    }
+    .upload-box small{color:var(--muted)}
+    .helper{font-size:13px;color:var(--muted);line-height:1.7}
+    .submit-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:6px}
+    .btn-submit{min-width:240px}
+    .notice{
+      margin-top:14px;padding:14px 16px;border-radius:14px;background:#f2f6fd;border:1px solid #d9e2f0;color:#4d5b73;
+      font-size:13px;line-height:1.8
+    }
+    .form-result{
+      display:none;margin-top:14px;padding:14px 16px;border-radius:14px;
+      border:1px solid #d9e2f0;background:#f2f6fd;color:#4d5b73;
+      font-size:14px;line-height:1.7
+    }
+    .form-result.show{display:block}
+    .form-result.success{border-color:#badfca;background:#f1fbf5;color:#1c6b3a}
+    .form-result.error{border-color:#f0c5c5;background:#fff5f5;color:#a83232}
+    .form-result.pending{border-color:#d8c59a;background:#fff9eb;color:#7a5918}
+    .btn[disabled]{opacity:.68;cursor:not-allowed;transform:none}
+    .contact{
+      background:linear-gradient(135deg,var(--bg),#132b57);
+      color:#fff;border-radius:24px;padding:24px;box-shadow:var(--shadow)
+    }
+    .contact h2{color:#fff}
+    .contact p{color:rgba(255,255,255,.84);line-height:1.8;margin:10px 0 0}
+    .contact-box{
+      margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px
+    }
+    .contact-item{
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+      border-radius:16px;padding:16px
+    }
+    .contact-item b{display:block;margin-bottom:6px}
+    .footer{
+      padding:22px 0 34px;color:#66748a;font-size:13px;line-height:1.8
+    }
+    .sticky-bar{
+      position:fixed;left:0;right:0;bottom:0;z-index:60;
+      background:rgba(11,23,48,.95);backdrop-filter:blur(10px);
+      border-top:1px solid rgba(255,255,255,.08);
+      padding:10px 14px;display:none;
+    }
+    .sticky-inner{display:flex;gap:10px;max-width:var(--max);margin:0 auto}
+    .sticky-inner .btn{flex:1}
+    @media (max-width: 900px){
+      .hero-grid,.grid-2,.contact-box,.form-grid{grid-template-columns:1fr}
+      .hero{padding-top:26px}
+      h1{font-size:clamp(30px,8vw,44px)}
+      .nav-links{display:none}
+      .sticky-bar{display:block}
+      body{padding-bottom:74px}
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">
+        <div class="brand-mark">张</div>
+        <div>
+          <div>张俊祥律师</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.72);font-weight:500">证券索赔咨询</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#advantages">服务优势</a>
+        <a href="#process">索赔流程</a>
+        <a href="#form">在线评估</a>
+        <a href="#contact">联系方式</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">证券虚假陈述 · 财务造假 · 信息披露违规 · 投资者维权</div>
+          <h1>股票亏损不一定只能认赔，符合条件的投资者可依法索赔</h1>
+          <p class="sub">
+            张俊祥律师专注证券虚假陈述责任纠纷，为受损投资者提供索赔资格初步研判、损失测算、立案材料准备及诉讼代理服务。
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#form">免费评估索赔资格</a>
+            <a class="btn btn-ghost" href="#form">立即提交索赔信息</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <h3 class="panel-title">适合哪些投资者提交信息</h3>
+          <ul class="panel-list">
+            <li><span class="dot"></span><span>曾因信任上市公司公告、业绩预告或定期报告而买入股票，后因公司虚假陈述、财务造假、重大遗漏或信息披露违规产生亏损。</span></li>
+            <li><span class="dot"></span><span>希望先判断是否具备索赔条件，再决定是否继续推进材料整理和诉讼程序。</span></li>
+            <li><span class="dot"></span><span>希望由律师直接跟进，减少自行整理证据和核对交易记录的压力。</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="grid-2">
+          <div class="card pain">
+            <div class="section-head">
+              <div>
+                <h2>常见痛点</h2>
+                <p class="lead">先判断，再行动，避免盲目维权。</p>
+              </div>
+            </div>
+            <p class="lead" style="margin-top:0">
+              如果您曾因信任上市公司公告而买入股票，却因公司虚假陈述、财务造假、重大遗漏、信息披露违规等问题造成投资损失，您可能有权依法主张赔偿。证券虚假陈述案件通常需要结合违规事实、买卖时间、交易记录和司法裁判规则综合判断，不能仅凭股价下跌就直接下结论。
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="section-head" id="advantages">
+              <div>
+                <h2>服务优势</h2>
+                <p class="lead">专业、稳重、可信，重视每一步案件推进。</p>
+              </div>
+            </div>
+            <div class="adv-list">
+              <div class="adv-item"><div class="num">1</div><div><strong>专注证券索赔案件</strong><span>围绕证券虚假陈述责任纠纷，提供有针对性的法律服务。</span></div></div>
+              <div class="adv-item"><div class="num">2</div><div><strong>律师本人直接跟进</strong><span>避免多层转接，提升沟通效率和案件把控度。</span></div></div>
+              <div class="adv-item"><div class="num">3</div><div><strong>前期可先进行免费资格研判</strong><span>先看是否符合基本条件，再决定是否正式委托。</span></div></div>
+              <div class="adv-item"><div class="num">4</div><div><strong>熟悉索赔流程与司法裁判口径</strong><span>更便于梳理关键时间点、交易区间和损失测算逻辑。</span></div></div>
+              <div class="adv-item"><div class="num">5</div><div><strong>重要节点主动同步案件进展</strong><span>让投资者清楚知道当前处于哪个环节。</span></div></div>
+              <div class="adv-item"><div class="num">6</div><div><strong>获赔后再按约定方式收取律师费</strong><span>降低投资者前期维权压力，具体以委托协议为准。</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>索赔流程</h2>
+            <p class="lead">流程清晰，便于投资者快速了解案件推进路径。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="flow-list">
+            <div class="flow-item"><div class="num">1</div><div><strong>提交股票交易信息</strong><span>填写股票名称或代码、买入时间、买入均价、是否卖出等基本信息。</span></div></div>
+            <div class="flow-item"><div class="num">2</div><div><strong>律师初步判断是否符合索赔条件</strong><span>先核对是否存在虚假陈述相关时间区间与初步索赔基础。</span></div></div>
+            <div class="flow-item"><div class="num">3</div><div><strong>准备交易记录、身份证明等材料</strong><span>按案件需要收集对账单、成交记录、身份证明和其他辅助材料。</span></div></div>
+            <div class="flow-item"><div class="num">4</div><div><strong>测算损失金额</strong><span>结合交易明细、卖出情况、持仓情况与司法规则进行损失测算。</span></div></div>
+            <div class="flow-item"><div class="num">5</div><div><strong>正式立案并推进诉讼</strong><span>完成起诉材料整理、法院立案和后续程序推进。</span></div></div>
+            <div class="flow-item"><div class="num">6</div><div><strong>调解、判决或执行获赔</strong><span>根据案件进展进入调解、判决、执行等阶段。</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="form">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>证券索赔资格初步评估</h2>
+            <p class="lead">请尽量如实填写，便于律师快速判断是否具备进一步研判基础。</p>
+          </div>
+        </div>
+
+        <div class="form-wrap">
+          <form id="claimForm" method="POST" enctype="multipart/form-data" novalidate>
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="证券索赔资格初步评估表单" />
+            <input type="hidden" name="from_name" value="张俊祥律师证券索赔网页" />
+            <input type="hidden" name="message" value="" />
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+            <div class="form-grid">
+              <div class="field full">
+                <label for="stock">您买入的是哪只股票？请填写股票名称或代码</label>
+                <input id="stock" name="stock" type="text" placeholder="例如：XX股份 / 600000" required />
+              </div>
+              <div class="field">
+                <label for="firstBuyDate">您最早买入该股票的时间</label>
+                <input id="firstBuyDate" name="firstBuyDate" type="date" required />
+              </div>
+              <div class="field">
+                <label for="buyPrice">您的买入均价</label>
+                <input id="buyPrice" name="buyPrice" type="text" inputmode="decimal" placeholder="例如：12.36" required />
+              </div>
+              <div class="field">
+                <label for="status">目前是否已经卖出</label>
+                <select id="status" name="status" required>
+                  <option value="">请选择</option>
+                  <option value="已全部卖出">已全部卖出</option>
+                  <option value="仍全部持有">仍全部持有</option>
+                  <option value="部分卖出">部分卖出</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="sellInfo">如已卖出，请填写卖出时间和卖出均价</label>
+                <input id="sellInfo" name="sellInfo" type="text" placeholder="例如：2025-09-18，10.82" />
+              </div>
+              <div class="field">
+                <label for="name">姓名</label>
+                <input id="name" name="name" type="text" placeholder="请输入您的姓名" required />
+              </div>
+              <div class="field">
+                <label for="phone">手机号</label>
+                <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="请输入手机号码" required />
+              </div>
+              <div class="field">
+                <label for="email">邮箱</label>
+                <input id="email" name="email" type="email" placeholder="选填，便于接收材料通知" />
+              </div>
+              <div class="field">
+                <label for="wechat">微信号</label>
+                <input id="wechat" name="wechat" type="text" placeholder="请输入微信号" />
+              </div>
+              <div class="field full">
+                <label for="note">其他补充说明</label>
+                <textarea id="note" name="note" placeholder="例如：是否收到过公司公告、是否已收到立案通知、是否曾委托过其他律师等"></textarea>
+              </div>
+              <div class="field full">
+                <label>上传交易记录截图或对账单入口</label>
+                <div class="upload-box">
+                  <div>
+                    <strong>支持上传图片或 PDF</strong><br />
+                    <small>建议上传成交明细、对账单、持仓截图等材料。</small>
+                  </div>
+                  <div>
+                    <input id="file" name="file" type="file" accept=".jpg,.jpeg,.png,.pdf" />
+                  </div>
+                </div>
+                <div class="helper">如暂时没有文件，也可以先提交基础信息，后续再补充材料。</div>
+              </div>
+            </div>
+
+            <div class="submit-row">
+              <button id="submitBtn" class="btn btn-primary btn-submit" type="submit">提交信息，获取免费初步研判</button>
+              <button class="btn btn-ghost" type="reset" style="color:var(--blue);border-color:#cfd9ea">清空重填</button>
+            </div>
+
+            <div id="formResult" class="form-result" role="status" aria-live="polite"></div>
+
+            <div class="notice">
+              您提交的信息仅用于索赔资格初步分析，律师将严格保护您的个人信息和交易隐私。
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="card">
+          <div class="section-head">
+            <div>
+              <h2>合规声明</h2>
+              <p class="lead">清晰说明服务边界，增强页面可信度。</p>
+            </div>
+          </div>
+          <p class="lead" style="margin:0">
+            本网页内容仅为证券索赔法律服务介绍，不构成对案件结果的承诺。具体能否索赔、索赔金额及案件结果，需结合上市公司违规事实、买卖时间、交易记录、司法裁判规则等因素综合判断。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <div class="section-head">
+            <div>
+              <h2>联系张俊祥律师</h2>
+              <p>欢迎有股票亏损索赔需求的投资者提交信息，律师将在收到材料后尽快进行初步研判。</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="contact-item">
+              <b>服务方式</b>
+              <div>在线提交信息、微信沟通、电话初筛、材料补充、案件推进。</div>
+            </div>
+            <div class="contact-item">
+              <b>适合人群</b>
+              <div>买入上市公司股票后出现亏损，并怀疑存在虚假陈述、财务造假或信息披露违规的投资者。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky-bar">
+    <div class="sticky-inner">
+      <a class="btn btn-primary" href="#form">免费评估</a>
+      <a class="btn btn-ghost" href="#contact">联系律师</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>提示：证券虚假陈述案件通常需要结合实施日、揭露日或更正日、交易记录及损失测算规则进行判断。页面内容可在正式上线前结合实际联系方式、执业信息、地区信息进一步补充。</div>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('claimForm');
+    const result = document.getElementById('formResult');
+    const submitBtn = document.getElementById('submitBtn');
+    const endpoint = 'https://api.web3forms.com/submit';
+
+    function showResult(type, message){
+      result.className = 'form-result show ' + type;
+      result.textContent = message;
+    }
+
+    function buildMessage(formData){
+      const labels = {
+        stock: '股票名称或代码',
+        firstBuyDate: '最早买入时间',
+        buyPrice: '买入均价',
+        status: '是否卖出',
+        sellInfo: '卖出时间和均价',
+        name: '姓名',
+        phone: '手机号',
+        email: '邮箱',
+        wechat: '微信号',
+        note: '补充说明'
+      };
+      return Object.entries(labels)
+        .map(([key, label]) => `${label}：${formData.get(key) || '未填写'}`)
+        .join('\n');
+    }
+
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      if(!form.reportValidity()){
+        showResult('error', '请先补全必填信息。');
+        return;
+      }
+
+      const accessKey = form.elements.access_key.value.trim();
+      if(!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY_HERE'){
+        showResult('error', 'Web3Forms Access Key 未配置，表单暂不可用。请先把隐藏字段 access_key 替换为真实 key。');
+        return;
+      }
+
+      const formData = new FormData(form);
+      formData.set('message', buildMessage(formData));
+      submitBtn.disabled = true;
+      submitBtn.textContent = '正在提交...';
+      showResult('pending', '正在提交，请稍候...');
+
+      try{
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          body: formData
+        });
+        const json = await res.json();
+
+        if(res.ok && json.success !== false){
+          showResult('success', '提交成功，律师将尽快进行免费初步研判。');
+          form.reset();
+        }else{
+          showResult('error', json.message || '提交失败，请检查表单配置后重试。');
+        }
+      }catch(err){
+        showResult('error', '网络错误，暂时无法提交。请稍后再试，或通过电话、微信联系律师。');
+      }finally{
+        submitBtn.disabled = false;
+        submitBtn.textContent = '提交信息，获取免费初步研判';
+      }
+    });
+  </script>
+</body>
+</html>
